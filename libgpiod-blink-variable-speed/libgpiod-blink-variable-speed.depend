@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1606848211 source:/home/pi/progetti/libgpiod-blink-variable-speed/main.c
+	<gpiod.h>
+	<stdio.h>
+	<unistd.h>
+	<sys/time.h>
+	<pthread.h>
+
