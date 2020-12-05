@@ -95,6 +95,8 @@ void* capture_button(void* arg)
 
 int main(int argc, char **argv)
 {
+	printf("libgpiod version: %s\n", gpiod_version_string());
+
 	chip = gpiod_chip_open_by_name(chipname);
 	if (!chip)
         goto end;
