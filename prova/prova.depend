@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1605355654 source:/home/pi/progetti/prova/main.c
+	<stdio.h>
+	"messaggi.h"
+
+1605355572 /home/pi/progetti/prova/messaggi.h
+
+1605355556 source:/home/pi/progetti/prova/messaggi.c
+	<stdio.h>
+	"messaggi.h"
+

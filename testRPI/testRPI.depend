@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1605369432 source:/home/pi/progetti/testRPI/main.c
+	"RPI.h"
+
+1605375046 /home/pi/progetti/testRPI/RPI.h
+	<stdio.h>
+	<sys/mman.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<fcntl.h>
+
+1605369028 source:/home/pi/progetti/testRPI/RPI.c
+	"RPI.h"
+

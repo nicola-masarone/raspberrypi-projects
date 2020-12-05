@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605982556 source:/home/pi/progetti/libgpiod-input/main.c
+	<gpiod.h>
+	<stdio.h>
+	<unistd.h>
+

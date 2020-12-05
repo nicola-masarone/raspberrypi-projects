@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1606582291 source:/home/pi/progetti/libgpiod-input-pull-up/main.c
+	<gpiod.h>
+	<stdio.h>
+	<unistd.h>
+

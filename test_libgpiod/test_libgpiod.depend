@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1605551934 source:/home/pi/progetti/test_libgpiod/main.c
+	<stdio.h>
+	<stdlib.h>
+	<gpiod.h>
+	<unistd.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605984812 source:/home/pi/progetti/libgpiod-event/main.c
+	<gpiod.h>
+	<stdio.h>
+	<unistd.h>
+
