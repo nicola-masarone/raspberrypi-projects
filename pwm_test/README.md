@@ -28,3 +28,9 @@ Params: pin                     Output pin (default 18) - see table
         clock                   PWM clock frequency (informational)
 ```
 These settings will take effect after a board reboot and will be permanent until you change */boot/config.txt* again.
+## Hardware setup
+The breadboard circuit mounting is very simple: you just have to connect GPIO12(PWM0) output (pin#32 of 40pins board header) to one LED in series with a 1k&Omega; resistor. To close the circuit add a wire between LED's cathode and the GND pin on the 40pins board header.
+<p align="center">
+  <img src="Raspberry_pi_led_pwm_bb.png" width=500/>
+</p>
+
