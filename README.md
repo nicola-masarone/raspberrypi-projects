@@ -12,3 +12,4 @@ A few, simple, Raspberry Pi projects
 
 ## Projects
 + [A classic Blink project with variable speed.](https://github.com/nicola-masarone/raspberrypi-projects/tree/main/libgpiod-blink-variable-speed) This project aims to close the loop between input and output on a Raspberry Pi board. Using a push-button we can change the LED blinking speed, in a circular way so that when the speed reaches the max value then it returns to the minimum at the next button press.
++ [PWM used to set LED brightness via */sys/class/pwm*](https://github.com/nicola-masarone/raspberrypi-projects/tree/main/pwm_test) This project shows how to use PWM output on Raspberry Pi via appropriate calls to */sys/class/pwm/* Changing PWM duty-cycle we can set an LED brightness, from LED off to LED full-on to LED off gain, in a cyclically way.
