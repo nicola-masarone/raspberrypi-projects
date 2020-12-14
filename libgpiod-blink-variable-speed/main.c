@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/time.h>
-#include<pthread.h>
+#include <pthread.h>
 
 #ifndef	CONSUMER
 #define	BUTTON "Button"

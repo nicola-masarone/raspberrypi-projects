@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1607961098 source:/home/pi/raspberrypi/raspberrypi-projects/pwm_test/main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+
