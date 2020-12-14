@@ -44,4 +44,4 @@ The program sets PWM0 with the following values:
 #define DUTY_MAX PWM_PERIOD     // ns
 #define DUTY_DELTA 100000       // ns
 ```
-PWM0 takes a period of 10000000ns, that is 10ms (i.e. 100Hz). Duty cycle goes from a minimum of 0% (LED off) to a maximum of 100% (LED full on), with steps of 1%.
+PWM0 takes a period of 10000000ns, that is 10ms (100Hz). Duty-cycle goes from a minimum of 0% (LED off) to a maximum of 100% (LED full on), to a maximux again, for five times, with steps of 1%.
