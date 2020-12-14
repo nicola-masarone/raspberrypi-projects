@@ -27,7 +27,7 @@ Params: pin                     Output pin (default 18) - see table
         func                    Pin function (default 2 = Alt5) - see above
         clock                   PWM clock frequency (informational)
 ```
-These settings will take effect after a board reboot and will be permanent until you change */boot/config.txt* again.
+These settings will take effect after a board reboot and will be permanent until you change */boot/config.txt* again. After this kind of settings you will find */sys/class/pwm/pwmchip0/* in your file system, giving to you the capability to access PWM0 chip.
 ## Hardware setup
 The breadboard circuit mounting is very simple: you just have to connect GPIO12(PWM0) output (pin#32 of 40pins board header) to one LED in series with a 1k&Omega; resistor. To close the circuit add a wire between LED's cathode and the GND pin on the 40pins board header.
 <p align="center">
