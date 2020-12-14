@@ -1,5 +1,5 @@
-# PWM used to set LED brightness via sysfs
-This project shows how to use PWM output on Raspberry Pi via appropriate calls to /sys/class/pwm/
+# PWM used to set LED brightness via */sys/class/pwm*
+This project shows how to use PWM output on Raspberry Pi via appropriate calls to */sys/class/pwm/*
 ## Presettings
 Please note that in order to use PWM output on the 40 pin Raspberry Pi header we have to enable this functionality. One way is to add a line in the board configuration file */boot/config.txt* with the following content: 
 ```
