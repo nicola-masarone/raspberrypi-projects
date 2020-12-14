@@ -45,3 +45,12 @@ The program sets PWM0 with the following values:
 #define DUTY_DELTA 100000       // ns
 ```
 PWM0 takes a period of 10000000ns, that is 10ms (100Hz). Duty-cycle goes from a minimum of 0% (LED off) to a maximum of 100% (LED full on), to a maximux again, for five times, with steps of 1%.
+
+### *sys/class/pwm/pwmchip0/* settings sequence
++ writing a 0 into */sys/class/pwm/pwmchip0/export* file activates the */sys/class/pwm/pwmchip0/pwm0/* folder, containing files for PWM0 settings
++ writing PWM_PERIOD (10000000) into */sys/class/pwm/pwmchip0/pwm0/period* file sets PWM0 period, expressed in nanoseconds
++ writing initial duty_cycle value (0) into */sys/class/pwm/pwmchip0/pwm0/duty_cycle* file sets PWM0 duty-cycle, expressed in nanoseconds
++ writing 1 into */sys/class/pwm/pwmchip0/pwm0/enable* file actually enables PWM0 output (LED off because of initial zero value for duty-cycle)
++ cyclically modifying duty_cycle values into */sys/class/pwm/pwmchip0/pwm0/duty_cycle* file updates PWM0 duty-cycle, expressed in nanoseconds, from 0% to 100% and from 100% to 0%, in 1% steps
++ writing 0 into */sys/class/pwm/pwmchip0/pwm0/enable* file actually disables PWM0 output
++ writing a 0 into */sys/class/pwm/pwmchip0/unexport* file disactivates the */sys/class/pwm/pwmchip0/pwm0/* folder
