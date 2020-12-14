@@ -34,3 +34,14 @@ The breadboard circuit mounting is very simple: you just have to connect GPIO12(
   <img src="Raspberry_pi_led_pwm_bb.png" width=500/>
 </p>
 
+## Software
+The program sets PWM0 with the following values:
+```
+#define LOOP_DELAY 10E3         // us
+
+#define PWM_PERIOD 10000000     // ns
+#define DUTY_MIN 0              // ns
+#define DUTY_MAX PWM_PERIOD     // ns
+#define DUTY_DELTA 100000       // ns
+```
+PWM0 takes a period of 10000000ns, that is 10ms (i.e. 100Hz). Duty cycle goes from a minimum of 0% (LED off) to a maximum of 100% (LED full on), with steps of 1%.
