@@ -27,3 +27,4 @@ Params: pin                     Output pin (default 18) - see table
         func                    Pin function (default 2 = Alt5) - see above
         clock                   PWM clock frequency (informational)
 ```
+These settings will take effect after a board reboot and will be permanent until you change */boot/config.txt* again.
